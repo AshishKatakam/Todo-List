@@ -1,0 +1,103 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right, #050a37, #460952, #890056, #c40042, #eb1212);
+    padding: 10px;
+}
+.container{
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 10px;
+}
+.container h2{
+    text-align: center;
+    font-size: 18px;
+    background: rgba(235, 231, 12, 0.356);
+    padding: 5px 0px;
+    margin-bottom: 10px;
+}
+.addtask{
+    display: flex;
+    padding: 10px 0px;
+    width: 100%;
+    margin: 0px auto;
+}
+.addtask input{
+    width: 90%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 0px;
+    padding-left: 5px;
+}
+input[type=text]{
+    color:pink;
+}
+.addtask button{
+    text-transform: uppercase;
+    border-radius: 20%;
+    padding: 0px 5px;
+    font-size:15px;
+    margin-left: 10px;
+    border: none;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+
+}
+ol{
+    list-style: none;
+    counter-reset: my-counter;
+}
+h4{
+    text-align: center;
+    text-transform: uppercase;
+}
+.todo .done{
+    margin: 10px 0px;
+    padding: 10px;
+    background: green;
+}
+.todo li{
+    width: 100%;
+    margin: 5px 0px;
+    background: #e96969bb;
+    counter-increment: my-counter;
+    padding: 5px;
+}
+.done li{
+    width: 100%;
+    margin: 5px 0px;
+    background:#00ff62;
+    counter-increment: my-counter;
+    padding: 5px;
+}
+ol li::before{
+    content: counter(my-counter);
+    background: blue;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-right: 5px;
+}
+ li button{
+    float: right;
+    border:none;
+    border-radius: 50%;
+    margin: 2px;
+ }
+.todo button{
+    background: #e96969bb;
+}
+.done button{
+    background: #00ff62;
+}
+i{
+    font-size: 20px !important;
+ }
